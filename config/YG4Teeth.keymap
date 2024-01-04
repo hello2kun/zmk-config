@@ -33,6 +33,12 @@ pin matrix changed
         };
     };
 
+//behavior_space_shift
+//{
+  //  compatible = "zmk, behavior-hold-tap";
+   // label = "HOMEROW_MODS_FOR_SPACE_SHIFT";
+   // #binding-cells
+
 
     keymap {
         compatible = "zmk,keymap";
