@@ -14,8 +14,7 @@ pin matrix changed
 #define OTHER_LAYER    2
 
 / {
-    behaviors 
-    {
+      behaviors {
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -24,7 +23,6 @@ pin matrix changed
             bindings = <&kp>, <&kp>;
         };
     };
-
 
     keymap {
         compatible = "zmk,keymap";
@@ -62,5 +60,5 @@ pin matrix changed
             >;
         };
 
-    }; //keymap end
+    };
 }; 
