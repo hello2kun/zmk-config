@@ -322,7 +322,7 @@ combos
 
         combo_equal {
             timeout-ms = <50>;
-            key-positions = <30 36>;
+            key-positions = <52 53>;
             bindings = <&kp PLUS>;
             };
 };
