@@ -14,10 +14,6 @@ pin matrix changed
 #define LAYER1 1
 #define LAYER2 2
 
-//&led_strip {
-//    chain-length = <2>;
-//};
-
 / {
 
 behaviors {
