@@ -383,7 +383,7 @@ macros
 &kp ESC          &kp Q            &kp W      &kp E           &kp R            &kp T           &kp Y             &kp U      &kp I            &kp O            &kp P      &kp LBKT    
 &kp BSPC         &kp A            &kp S      &kp D           &kp F            &kp G           &kp H             &kp J      &kp K            &kp L            &kp SEMI   &kp APOS   
 &kp LSHFT        &kp Z            &kp X      &kp C           &kp V            &kp B           &kp N             &kp M      &kp COMMA        &kp DOT          &kp FSLH   &kp UP     
-&kp LCTRL        &kp LGUI         &kp LALT   &lt LAYER2 RET  &bhm LCTRL MINUS &bhm LALT PLUS  &lt LAYER1 STAR   &kp DEL    &lt LAYER2 RALT  &lt LAYER1 RALT  &kp LEFT   &kp DOWN   
+&kp LCTRL        &kp LGUI         &kp LALT   &lt LAYER2 RET  &bhm LCTRL MINUS &bhm LALT PLUS  &lt LAYER1 STAR   &lt LAYER2 FSLH &lt LAYER2 RALT  &lt LAYER1 RALT  &kp LEFT   &kp DOWN   
 &lt LAYER1 SPACE &ht LSHIFT SPACE &kp BSPC   &kp RBKT        &kp RET          &kp RSHFT       &kp RIGHT
             >;
         };
@@ -393,7 +393,7 @@ macros
 //C0        C1        C2        C3        C4        C5        C6        C7        C8         C9        C10        C11          
 &td12       &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &kp N6    &kp N7    &kp N8     &kp N9    &kp N0     &kp MINUS 
 &kp DEL     &kp N4    &kp N5    &kp N6    &kp DLLR  &kp PRCNT &kp CARET &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &kp UNDER
-&trans      &kp N7    &kp N8    &kp N9    &kp N0    &trans    &trans    &trans    &trans     &trans    &trans     &kp PG_UP    
+&kp N0      &kp N7    &kp N8    &kp N9    &kp N0    &trans    &trans    &trans    &trans     &trans    &trans     &kp PG_UP    
 &kp RET     &trans    &trans    &trans    &mo 3     &trans    &trans    &kp INS   &trans     &trans    &kp HOME   &kp PG_DN    
 &trans      &trans    &kp DEL   &kp EQUAL &kp PLUS  &trans    &kp END
             >;
