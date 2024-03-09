@@ -377,7 +377,7 @@ macros
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp AT &kp g &kp m &kp a &kp i &kp l>;
+                = <&macro_tap &kp AT &kp g &kp m &kp a &kp i &kp l>;
         };
 
 /*
@@ -386,7 +386,7 @@ macros
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &bt BT_SEL 0 &rgb_ug RGB_COLOR_HSB(8,100,100)>;
+                = <&macro_tap &bt BT_SEL 0 &rgb_ug RGB_COLOR_HSB(8,100,100)>;
         };
 */
 
