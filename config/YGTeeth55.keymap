@@ -380,15 +380,16 @@ macros
             bindings
                 = <&macro_tap &kp AT &kp g &kp m &kp a &kp i &kp l>;
         };
+*/
 
         setBT1: setBT1
         {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &bt BT_SEL 0 &rgb_ug RGB_COLOR_HSB(8,100,100)>;
+                = <&macro_tap &bt BT_SEL 0>
+                , <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,100)>;
         };
-*/
 
 };
 
