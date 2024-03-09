@@ -380,6 +380,7 @@ macros
                 = <&macro_press &kp AT &kp g &kp m &kp a &kp i &kp l>;
         };
 
+/*
         setBT1: setBT1
         {
             compatible = "zmk,behavior-macro";
@@ -387,7 +388,7 @@ macros
             bindings
                 = <&macro_press &bt BT_SEL 0 &rgb_ug RGB_COLOR_HSB(8,100,100)>;
         };
-
+*/
 
 };
 
