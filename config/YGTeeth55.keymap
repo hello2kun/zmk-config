@@ -371,6 +371,15 @@ macros
 
                 <&macro_tap &kp RALT &kp Q &kp K &kp R &kp D &kp L &kp R &kp M &kp S &kp RBKT &kp SPACE>;
       };
+
+      mcr5: mcr5
+      {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp AT &kp g &kp m &kp a &kp i &kp l>;
+        };
+
 };
 
     keymap {
@@ -392,8 +401,8 @@ macros
             bindings = <
 //C0        C1        C2        C3        C4        C5        C6        C7        C8         C9        C10        C11          
 &td12       &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &kp N6    &kp N7    &kp N8     &kp N9    &kp N0     &kp MINUS 
-&kp DEL     &kp N4    &kp N5    &kp N6    &kp DLLR  &kp PRCNT &kp CARET &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &kp UNDER
-&kp N0      &kp N7    &kp N8    &kp N9    &kp N0    &trans    &trans    &trans    &trans     &trans    &trans     &kp PG_UP    
+&kp DEL     &kp N4    &kp N5    &kp N6    &kp DLLR  &kp PRCNT &kp CARET &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR   &kp UNDER
+&trans      &kp N7    &kp N8    &kp N9    &kp N0    &trans    &trans    &trans    &trans     &trans    &trans     &kp PG_UP    
 &kp RET     &trans    &trans    &trans    &kp FSLH  &kp STAR  &trans    &trans    &trans     &trans    &kp HOME   &kp PG_DN    
 &trans      &trans    &kp DEL   &kp EQUAL &kp PLUS  &trans    &kp END
             >;
