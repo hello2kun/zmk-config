@@ -15,7 +15,7 @@ pin matrix changed
 #define LAYER2 2
 #define GAMELAYER 3
 
-#define NONE 0
+//#define NONE 0
 
 / {
 
