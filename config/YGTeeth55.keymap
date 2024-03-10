@@ -16,9 +16,6 @@ pin matrix changed
 #define GAMELAYER 3
 #define WORKLAYER 4
 
-#define LOWER 0
-#define LOWERLAYER1 1
-#define LOWERLAYER2 2
 
 / {
 
@@ -29,7 +26,6 @@ behaviors {
         flavor = "balanced";
         };
 };
-
 
 behaviors {
         ht: hold_tap {
@@ -169,6 +165,16 @@ behaviors {
             bindings = <&kp ESC>, <&kp TILDE>, <&kp GRAVE>;
             };
        };
+
+
+conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <0 1>;
+            then-layer = <4>;
+        };
+    };
+
 
 combos
 {
@@ -340,9 +346,9 @@ combos
             key-positions = <0 51>;
             bindings = <&tog WORKLAYER>;
             };
-};
+}; //end combo
 
-macros 
+macros
 {
       mcr1: mcr1
       {
@@ -442,8 +448,7 @@ macros
                 = <&macro_tap &bt BT_SEL 4>
                 , <&macro_tap &rgb_ug RGB_COLOR_HSB(180,100,100)>;
         };
-
-};
+}; // end macro
 
     keymap {
         compatible = "zmk,keymap";
