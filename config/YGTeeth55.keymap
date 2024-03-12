@@ -54,8 +54,8 @@ behaviors {
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <230>;
-            bindings = <&kp Q>, <&kp N1>, <&kp EXCL>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N1>, <&kp EXCL>;
             };
        };
 
@@ -63,8 +63,8 @@ behaviors {
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <230>;
-            bindings = <&kp W>, <&kp N2>, <&kp AT>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N2>, <&kp AT>;
             };
        };
 
@@ -72,8 +72,8 @@ behaviors {
         td2: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <230>;
-            bindings = <&kp E>, <&kp N3>, <&kp HASH>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N3>, <&kp HASH>;
             };
        };
 
@@ -81,8 +81,8 @@ behaviors {
         td3: tap_dance_3 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <230>;
-            bindings = <&kp R>, <&kp N4>, <&kp DLLR>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N4>, <&kp DLLR>;
             };
        };
 
@@ -90,8 +90,8 @@ behaviors {
         td4: tap_dance_4 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <230>;
-            bindings = <&kp T>, <&kp N5>, <&kp PRCNT>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N5>, <&kp PRCNT>;
             };
        };
 
@@ -99,8 +99,8 @@ behaviors {
         td5: tap_dance_5 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <230>;
-            bindings = <&kp Y>, <&kp N6>, <&kp CARET>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N6>, <&kp CARET>;
             };
        };
 
@@ -108,8 +108,8 @@ behaviors {
         td6: tap_dance_6 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <230>;
-            bindings = <&kp U>, <&kp N7>, <&kp AMPS>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N7>, <&kp AMPS>;
             };
        };
 
@@ -117,8 +117,8 @@ behaviors {
         td7: tap_dance_7 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <230>;
-            bindings = <&kp I>, <&kp N8>, <&kp STAR>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N8>, <&kp STAR>;
             };
        };
 
@@ -126,8 +126,8 @@ behaviors {
         td8: tap_dance_8 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <230>;
-            bindings = <&kp O>, <&kp N9>, <&kp LPAR>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N9>, <&kp LPAR>;
             };
        };
 
@@ -135,8 +135,8 @@ behaviors {
         td9: tap_dance_9 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <230>;
-            bindings = <&kp P>, <&kp N0>, <&kp RPAR>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N0>, <&kp RPAR>;
             };
        };
 
@@ -144,16 +144,16 @@ behaviors {
         td10: tap_dance_10 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <230>;
-            bindings = <&kp LBKT>, <&kp MINUS>, <&kp UNDER>;
+            tapping-term-ms = <200>;
+            bindings = <&kp MINUS>, <&kp UNDER>;
             };
        };
 behaviors {
         td11: tap_dance_11 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <230>;
-            bindings = <&kp RBKT>, <&kp EQUAL>, <&kp PLUS>;
+            tapping-term-ms = <200>;
+            bindings = <&kp EQUAL>, <&kp PLUS>;
             };
        };
 
@@ -161,7 +161,7 @@ behaviors {
         td12: tap_dance_12 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <230>;
+            tapping-term-ms = <200>;
             bindings = <&kp ESC>, <&kp TILDE>, <&kp GRAVE>;
             };
        };
@@ -467,18 +467,18 @@ macros
 
         layer1 {
             bindings = <
-//C0        C1        C2        C3        C4        C5        C6        C7        C8         C9        C10        C11          
-&td12       &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &kp N6    &kp N7    &kp N8     &kp N9    &kp N0     &kp MINUS 
-&kp DEL     &kp N4    &kp N5    &kp N6    &kp DLLR  &kp PRCNT &kp CARET &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR   &kp UNDER
-&trans      &kp N7    &kp N8    &kp N9    &kp N0    &trans    &trans    &trans    &trans     &trans    &trans     &kp PG_UP    
-&kp RET     &trans    &trans    &trans    &kp FSLH  &kp STAR  &trans    &trans    &trans     &trans    &kp HOME   &kp PG_DN    
-&trans      &trans    &kp DEL   &kp EQUAL &kp PLUS  &trans    &kp END
+//C0        C1        C2        C3        C4       C5        C6        C7        C8         C9        C10        C11          
+&kp TILDE   &td0      &td1      &td2      &td11    &kp N5    &kp N6    &kp N7    &kp N8     &kp N9    &kp N0     &kp MINUS 
+&kp DEL     &td3      &td4      &td5      &td10    &kp PRCNT &kp CARET &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR   &kp UNDER
+&trans      &td6      &td7      &td8      &td9     &trans    &trans    &trans    &trans     &trans    &trans     &kp PG_UP    
+&trans      &trans    &trans    &trans    &kp FSLH &kp STAR  &trans    &trans    &trans     &trans    &kp HOME   &kp PG_DN    
+&trans      &trans    &kp DEL   &kp EQUAL &kp PLUS &trans    &kp END
             >;
         };
 
         layer2 {
             bindings = <
-//C0      C1           C2        C3         C4           C5           C6        C7              C8              C9              C10            C11              
+//C0       C1           C2        C3         C4           C5           C6        C7              C8              C9              C10            C11              
 &kp GRAVE &kp F1       &kp F2    &kp F3     &kp F4       &kp F5       &kp F6    &kp F7          &kp F8          &kp F9          &kp F10        &kp F11     
 &kp CAPS  &mcr1        &mcr2     &mcr3      &mcr4        &mcr5        &trans    &trans          &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_ON &rgb_ug RGB_OFF
 &trans    &setBT0      &setBT1   &setBT2    &setBT3      &setBT4      &trans    &rgb_ug RGB_EFF &rgb_ug RGB_BRD &rgb_ug RGB_BRI &bt BT_CLR     &kp C_VOL_UP 
