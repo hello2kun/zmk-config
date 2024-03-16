@@ -511,8 +511,8 @@ macros
 &kp TILDE   &td0       &td1      &td2      &td11    &kp N5    &kp N6    &kp N7    &kp N8     &kp N9    &kp N0     &kp MINUS 
 &kp DEL     &td3       &td4      &td5      &td10    &kp PRCNT &kp CARET &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR   &kp UNDER
 &trans      &td6       &td7      &td8      &td9     &trans    &trans    &trans    &trans     &trans    &trans     &kp PG_UP    
-&trans      &mo LAYER2 &trans    &trans    &kp FSLH &kp STAR  &trans    &trans    &trans     &trans    &kp HOME   &kp PG_DN    
-&trans      &trans     &kp DEL   &kp EQUAL &kp PLUS &trans    &kp END
+&trans      &trans     &trans    &kp FSLH &kp STAR  &trans    &trans    &trans     &trans    &kp HOME   &kp PG_DN    
+&trans      &mo LAYER2 &kp DEL   &kp EQUAL &kp PLUS &trans    &kp END
             >;
         };
 
