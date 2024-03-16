@@ -349,7 +349,7 @@ combos
 
         combo_TaskManager {
             timeout-ms = <50>;
-            key-positions = <0 50 36>;
+            key-positions = <0 36 50>;
             bindings = <&mcrTaskManager>;
             };
 
@@ -461,7 +461,7 @@ macros
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp LCTRL &kp LALT &kp DEL>;
+                = <&macro_press &kp LCTRL &kp LALT &kp DEL>;
         };
 
 }; // end macro
