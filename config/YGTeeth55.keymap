@@ -489,7 +489,7 @@ macros
 &kp DEL     &td3      &td4      &td5      &td10    &kp PRCNT &kp CARET &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR   &kp UNDER
 &trans      &td6      &td7      &td8      &td9     &trans    &trans    &trans    &trans     &trans    &trans     &kp PG_UP    
 &trans      &trans    &trans    &trans    &kp FSLH &kp STAR  &trans    &trans    &trans     &trans    &kp HOME   &kp PG_DN    
-&trans      &trans    &kp DEL   &kp EQUAL &kp PLUS &trans    &kp END
+&trans      &mo 2     &kp DEL   &kp EQUAL &kp PLUS &trans    &kp END
             >;
         };
 
