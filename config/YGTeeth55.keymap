@@ -335,17 +335,24 @@ combos
             bindings = <&kp PLUS>;
             };
 
-         combo_gamemode {
+        combo_gamemode {
             timeout-ms = <50>;
             key-positions = <0 50>;
             bindings = <&tog GAMELAYER>;
             };
 
-         combo_workmode {
+        combo_workmode {
             timeout-ms = <50>;
             key-positions = <0 51>;
             bindings = <&tog WORKLAYER>;
             };
+
+        combo_TaskManager {
+            timeout-ms = <50>;
+            key-positions = <0 50 36>;
+            bindings = <&mcrTaskManager>;
+            };
+
 }; //end combo
 
 macros
@@ -448,6 +455,15 @@ macros
                 = <&macro_tap &bt BT_SEL 4>
                 , <&macro_tap &rgb_ug RGB_COLOR_HSB(180,100,100)>;
         };
+
+        mcrTaskManager: mcrTaskManager
+        {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LCTRL &kp LALT &kp DEL>;
+        };
+
 }; // end macro
 
     keymap {
