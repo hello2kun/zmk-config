@@ -167,7 +167,7 @@ behaviors {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <220>;
-            bindings = <&kp MINUS>, <&kp FSLH>;
+            bindings = <&kp MINUS>, <&kp UNDER>;
             };
        };
 behaviors {
@@ -175,7 +175,7 @@ behaviors {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <220>;
-            bindings = <&kp PLUS>, <&kp STAR> ;
+            bindings = <&kp PLUS>, <&kp EQUAL> ;
             };
        };
 
@@ -197,7 +197,25 @@ behaviors {
             };
        };
 
+behaviors {
+        td14: tap_dance_14 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <220>;
+            bindings = <&kp MINUS>, <&kp FLSH>;
+            };
 
+       };
+behaviors {
+        td15: tap_dance_15 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <220>;
+            bindings = <&kp PLUS>, <&kp STAR>;
+            };
+       };
+
+/*
 conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
@@ -205,7 +223,7 @@ conditional_layers {
             then-layer = <4>;
         };
     };
-
+*/
 
 combos
 {
@@ -509,12 +527,12 @@ macros
 
         layer1 {
             bindings = <
-//C0        C1         C2        C3        C4       C5        C6        C7        C8         C9        C10        C11          
-&kp TILDE   &td0       &td1      &td2      &td11    &kp N5    &kp N6    &kp N7    &kp N8     &kp N9    &kp N0     &kp MINUS 
-&kp DEL     &td3       &td4      &td5      &td10    &kp PRCNT &kp CARET &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR   &kp UNDER
-&trans      &td6       &td7      &td8      &td9     &td13     &trans    &trans    &trans     &trans    &trans     &kp PG_UP    
-&trans      &trans     &trans    &trans    &kp FSLH  &kp STAR &trans    &trans     &trans    &kp HOME  &kp PG_DN    
-&trans      &trans     &kp DEL   &kp EQUAL &kp PLUS &trans    &kp END
+//C0        C1         C2        C3        C4         C5         C6        C7        C8         C9        C10        C11          
+&kp TILDE   &td0       &td1      &td2      &td3       &td4       &td5      &td6      &td7       &td8      &td9       &td10 
+&kp DEL     &td3       &td4      &td5      &td13      &td15      &trans    &trans    &trans     &trans    &trans     &trans
+&trans      &td6       &td7      &td8      &td9       &td14      &trans    &trans    &trans     &trans    &trans     &kp PG_UP    
+&trans      &trans     &trans    &trans    &mo LAYER2 &mo LAYER3 &trans    &trans    &trans     &kp HOME  &kp PG_DN    
+&trans      &trans     &kp DEL   &td11     &kp PLUS &trans       &kp END
             >;
         };
 
@@ -533,8 +551,8 @@ macros
             bindings = <
 //C0      C1         C2        C3         C4        C5        C6        C7              C8              C9              C10            C11              
 &trans    &trans    &trans    &trans     &trans     &trans    &trans    &trans          &trans          &trans          &trans         &trans    
-&trans    &mcr1     &mcr2     &mcr3      &mcr4      &mcr5     &trans    &trans          &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_ON &rgb_ug RGB_OFF
-&trans    &setBT0   &setBT1   &setBT2    &setBT3    &setBT4   &trans    &rgb_ug RGB_EFF &rgb_ug RGB_BRD &rgb_ug RGB_BRI &bt BT_CLR     &kp C_VOL_UP 
+&trans    &trans    &trans    &trans     &trans     &trans    &trans    &trans          &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_ON &rgb_ug RGB_OFF
+&trans    &trans    &trans    &trans     &trans     &trans    &trans    &rgb_ug RGB_EFF &rgb_ug RGB_BRD &rgb_ug RGB_BRI &bt BT_CLR     &kp C_VOL_UP 
 &trans    &trans    &trans    &trans     &trans     &trans    &trans    &trans          &trans          &kp LANG2       &kp C_PREV     &kp C_VOL_DN 
 &trans    &trans    &trans    &trans     &trans     &trans    &trans
             >;
