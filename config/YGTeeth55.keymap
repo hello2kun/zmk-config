@@ -527,11 +527,11 @@ macros
 
         layer1 {
             bindings = <
-//C0        C1         C2        C3        C4         C5         C6        C7        C8         C9        C10        C11          
-&kp TILDE   &td0       &td1      &td2      &td3       &td4       &td5      &td6      &td7       &td8      &td9       &td10 
-&kp DEL     &td3       &td4      &td5      &td13      &td15      &trans    &trans    &trans     &trans    &trans     &trans
-&trans      &td6       &td7      &td8      &td9       &td14      &trans    &trans    &trans     &trans    &trans     &kp PG_UP    
-&trans      &trans     &trans    &trans    &mo LAYER2 &mo LAYER3 &trans    &trans    &trans     &kp HOME  &kp PG_DN    
+//C0        C1         C2        C3        C4         C5         C6       C7        C8         C9        C10        C11          
+&kp TILDE   &td0       &td1      &td2      &td3       &td4       &td5     &td6      &td7       &td8      &td9       &td10 
+&kp DEL     &td3       &td4      &td5      &td13      &td11      &td15    &trans    &trans     &trans    &trans     &trans
+&trans      &td6       &td7      &td8      &td9       &td10      &td14    &trans    &trans     &trans    &trans     &kp PG_UP    
+&trans      &trans     &trans    &trans    &mo LAYER2 &mo LAYER3 &trans   &trans    &trans     &kp HOME  &kp PG_DN    
 &trans      &trans     &kp DEL   &td11     &kp PLUS &trans       &kp END
             >;
         };
