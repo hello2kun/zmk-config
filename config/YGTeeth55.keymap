@@ -530,11 +530,11 @@ macros
 
         layer1 {
             bindings = <
-//C0        C1         C2        C3        C4         C5         C6       C7        C8         C9        C10        C11          
-&kp TILDE   &td0       &td1      &td2      &td3       &td4       &td5     &td6      &td7       &td8      &td9       &td10 
-&kp DEL     &td3       &td4      &td5      &td13      &td11      &td15    &trans    &trans     &trans    &COLON     &DQT
-&trans      &td6       &td7      &td8      &td9       &td10      &td14    &trans    &kp LT     &kp GT    &kp QMARK  &kp PG_UP    
-&trans      &trans     &trans    &trans    &mo LAYER2 &mo LAYER3 &trans   &trans    &trans     &trans    &kp HOME   &kp PG_DN    
+//C0        C1         C2        C3        C4         C5         C6       C7        C8            C9        C10        C11          
+&kp TILDE   &td0       &td1      &td2      &td3       &td4       &td5     &td6      &td7          &td8      &td9       &td10 
+&kp DEL     &td3       &td4      &td5      &td13      &td11      &td15    &trans    &trans        &trans    &kp COLON  &kp DQT
+&trans      &td6       &td7      &td8      &td9       &td10      &td14    &trans    &kp LT        &kp GT    &kp QMARK  &kp PG_UP    
+&trans      &trans     &trans    &trans    &mo LAYER2 &mo LAYER3 &trans   &trans    &trans        &trans    &kp HOME   &kp PG_DN    
 &trans      &trans     &kp DEL   &td11     &kp PLUS   &trans     &kp END
             >;
         };
@@ -555,7 +555,7 @@ macros
 //C0      C1        C2        C3         C4        C5        C6           C7              C8              C9              C10            C11              
 &trans    &setBT0   &setBT1   &setBT2    &setBT3   &setBT4   &out OUT_TOG &trans          &trans          &trans          &trans         &trans    
 &trans    &trans    &trans    &trans     &trans    &trans    &trans       &trans          &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_ON &rgb_ug RGB_OFF
-&trans    &trans    &trans    &trans     &trans    &trans    &trans       &rgb_ug RGB_EFF &rgb_ug RGB_BRD &rgb_ug RGB_BRI &bt BT_CLR     &kp C_VOL_UP 
+&trans    &trans    &trans    &trans     &trans    &trans    &trans       &rgb_ug RGB_EFF &rgb_ug RGB_BRD &rgb_ug RGB_BRI &trans         &kp C_VOL_UP 
 &trans    &trans    &trans    &trans     &trans    &trans    &trans       &trans          &trans          &trans          &kp C_PREV     &kp C_VOL_DN 
 &trans    &trans    &trans    &bt BT_CLR &trans    &trans    &trans
             >;
