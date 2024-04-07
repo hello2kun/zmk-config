@@ -533,7 +533,7 @@ macros
 //C0        C1         C2        C3        C4         C5         C6       C7        C8         C9        C10        C11          
 &kp TILDE   &td0       &td1      &td2      &td3       &td4       &td5     &td6      &td7       &td8      &td9       &td10 
 &kp DEL     &td3       &td4      &td5      &td13      &td11      &td15    &trans    &trans     &trans    &COLON     &DQT
-&trans      &td6       &td7      &td8      &td9       &td10      &td14    &trans    &LT        &GT       &QMARK     &kp PG_UP    
+&trans      &td6       &td7      &td8      &td9       &td10      &td14    &trans    &kp LT     &kp GT    &kp QMARK  &kp PG_UP    
 &trans      &trans     &trans    &trans    &mo LAYER2 &mo LAYER3 &trans   &trans    &trans     &trans    &kp HOME   &kp PG_DN    
 &trans      &trans     &kp DEL   &td11     &kp PLUS   &trans     &kp END
             >;
@@ -541,23 +541,23 @@ macros
 
         layer2 {
             bindings = <
-//C0       C1           C2        C3         C4           C5           C6           C7              C8              C9              C10            C11              
-&kp GRAVE &kp F1       &kp F2    &kp F3     &kp F4       &kp F5       &kp F6        &kp F7          &kp F8          &kp F9          &kp F10        &kp F11     
-&kp CAPS  &mcr1        &mcr2     &mcr3      &mcr4        &mcr5        &trans        &trans          &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_ON &rgb_ug RGB_OFF
-&trans    &setBT0      &setBT1   &setBT2    &setBT3      &setBT4      &out OUT_TOG  &rgb_ug RGB_EFF &rgb_ug RGB_BRD &rgb_ug RGB_BRI &bt BT_CLR     &kp C_VOL_UP 
-&trans    &trans       &trans    &trans     &trans       &trans       &trans        &trans          &trans          &kp LANG2       &kp C_BRI_DN     &kp C_VOL_DN 
-&trans    &trans       &kp BSLH  &kp F12    &kp PSCRN    &kp C_PP     &kp C_BRI_INC
+//C0       C1           C2        C3         C4           C5           C6           C7       C8       C9          C10          C11              
+&kp GRAVE &kp F1       &kp F2    &kp F3     &kp F4       &kp F5       &kp F6        &kp F7   &kp F8   &kp F9      &kp F10      &kp F11     
+&kp CAPS  &mcr1        &mcr2     &mcr3      &mcr4        &mcr5        &trans        &trans   &trans   &trans      &trans       &trans 
+&trans    &trans       &trans    &trans     &trans       &trans       &trans        &trans   &trans   &trans      &trans       &kp C_VOL_UP 
+&trans    &trans       &trans    &trans     &trans       &trans       &trans        &trans   &trans   &kp LANG2   &kp C_BRI_DN &kp C_VOL_DN 
+&trans    &trans       &kp BSLH  &kp F12    &kp PSCRN    &kp C_PP     &trans
             >;
         }; //Layer2 end
 
         layer3 {
             bindings = <
-//C0      C1         C2        C3         C4        C5        C6        C7              C8              C9              C10            C11              
-&trans    &trans    &trans    &trans     &trans     &trans    &trans    &trans          &trans          &trans          &trans         &trans    
-&trans    &trans    &trans    &trans     &trans     &trans    &trans    &trans          &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_ON &rgb_ug RGB_OFF
-&trans    &trans    &trans    &trans     &trans     &trans    &trans    &rgb_ug RGB_EFF &rgb_ug RGB_BRD &rgb_ug RGB_BRI &bt BT_CLR     &kp C_VOL_UP 
-&trans    &trans    &trans    &trans     &trans     &trans    &trans    &trans          &trans          &kp LANG2       &kp C_PREV     &kp C_VOL_DN 
-&trans    &trans    &trans    &trans     &trans     &trans    &trans
+//C0      C1        C2        C3         C4        C5        C6           C7              C8              C9              C10            C11              
+&trans    &setBT0   &setBT1   &setBT2    &setBT3   &setBT4   &out OUT_TOG &trans          &trans          &trans          &trans         &trans    
+&trans    &trans    &trans    &trans     &trans    &trans    &trans       &trans          &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_ON &rgb_ug RGB_OFF
+&trans    &trans    &trans    &trans     &trans    &trans    &trans       &rgb_ug RGB_EFF &rgb_ug RGB_BRD &rgb_ug RGB_BRI &bt BT_CLR     &kp C_VOL_UP 
+&trans    &trans    &trans    &trans     &trans    &trans    &trans       &trans          &trans          &trans          &kp C_PREV     &kp C_VOL_DN 
+&trans    &trans    &trans    &bt BT_CLR &trans    &trans    &trans
             >;
         }; //Layer3 end
 
