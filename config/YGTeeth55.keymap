@@ -553,7 +553,7 @@ macros
         layer3 {
             bindings = <
 //C0       C1        C2        C3         C4        C5        C6           C7              C8              C9              C10            C11              
-&trans     &setBT0   &setBT1   &setBT2    &setBT3   &setBT4   &out OUT_TOG &trans          &trans          &trans          &bt BT_CLR     &bt BT_PRE    
+&trans     &setBT0   &setBT1   &setBT2    &setBT3   &setBT4   &out OUT_TOG &trans          &trans          &trans          &bt BT_CLR     &bt BT_PRV  
 &trans     &trans    &trans    &trans     &trans    &trans    &trans       &trans          &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_ON &rgb_ug RGB_OFF
 &trans     &trans    &trans    &trans     &trans    &trans    &trans       &rgb_ug RGB_EFF &rgb_ug RGB_BRD &rgb_ug RGB_BRI &bt BT_CLR     &kp C_VOL_UP 
 &trans     &trans    &trans    &trans     &trans    &trans    &trans       &trans          &trans          &trans          &kp C_PREV     &kp C_VOL_DN 
