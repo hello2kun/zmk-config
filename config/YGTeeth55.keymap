@@ -388,7 +388,7 @@ combos
 /*
         combo_gamemode {
             timeout-ms = <50>;
-            key-positions = <0 36 50 53>;
+            key-positions = <40 41 42 43>;
             bindings = <&tog GAMELAYER>;
             };
 */
