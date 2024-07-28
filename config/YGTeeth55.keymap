@@ -427,7 +427,7 @@ macros
             bindings
                 = <&macro_tap &kp R &kp M &kp S &kp N0 &kp N9 &kp N7 &kp N9>
                 , <&macro_press &kp LSHFT>
-                , <&macro_tap &kp N1 &kp N2>
+                , <&macro_tap &kp N1 &kp N2 &kp N3>
                 , <&macro_release &kp LSHFT>;
       };
 
@@ -447,6 +447,10 @@ macros
                 <&macro_release &kp LSHFT>,
 
                 <&macro_tap &kp RALT &kp Q &kp K &kp R &kp D &kp L &kp R &kp M &kp S &kp RBKT &kp SPACE>;
+
+                <&macro_press &kp LSHFT>,
+                <&macro_tap &kp N4>,
+                <&macro_release &kp LSHFT>,
       };
 
         mcr5: mcr5
